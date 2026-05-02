@@ -2,8 +2,7 @@
 
 > A full-stack web application for managing projects, assigning tasks, and tracking team progress with role-based access control.
 
-[![Live Demo](https://img.shields.io/badge/Live%20Demo-Railway-blueviolet?style=for-the-badge)](https://your-app.up.railway.app)
-[![GitHub](https://img.shields.io/badge/GitHub-Repo-black?style=for-the-badge&logo=github)](https://github.com/yourusername/team-task-manager)
+
 
 ---
 
@@ -12,8 +11,7 @@
 | Resource | URL |
 |----------|-----|
 | 🌐 Live App | https://your-app.up.railway.app |
-| 💻 GitHub Repo | https://github.com/yourusername/team-task-manager |
-| 🎥 Demo Video | https://loom.com/your-video-link |
+
 
 ---
 
