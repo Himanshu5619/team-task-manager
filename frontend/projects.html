@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <title>TaskFlow — Projects</title>
+  <link rel="stylesheet" href="css/style.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600;700&display=swap" rel="stylesheet"/>
+</head>
+<body>
+  <nav class="navbar">
+    <span class="brand">TaskFlow</span>
+    <div class="nav-links">
+      <a href="dashboard.html">Dashboard</a>
+      <a href="projects.html" class="active">Projects</a>
+      <a href="tasks.html">Tasks</a>
+    </div>
+    <div class="nav-user">
+      <span id="navUserName"></span>
+      <span id="navUserRole" class="badge"></span>
+      <button onclick="logout()" class="btn-logout">Logout</button>
+    </div>
+  </nav>
+
+  <main class="container">
+    <div class="page-header">
+      <h2 class="page-title">Projects</h2>
+      <button class="btn-primary" id="newProjectBtn" onclick="openProjectModal()">+ New Project</button>
+    </div>
+    <div id="projectsGrid" class="projects-grid"></div>
+  </main>
+
+  <!-- Modal -->
+  <div id="projectModal" class="modal hidden">
+    <div class="modal-content">
+      <h3 id="modalTitle">New Project</h3>
+      <div class="form-group">
+        <label>Project Name</label>
+        <input type="text" id="projectName" placeholder="Project name" />
+      </div>
+      <div class="form-group">
+        <label>Description</label>
+        <textarea id="projectDesc" placeholder="Description..."></textarea>
+      </div>
+      <div class="form-group">
+        <label>Add Members</label>
+        <div id="membersList" class="members-list"></div>
+      </div>
+      <div class="modal-actions">
+        <button class="btn-secondary" onclick="closeProjectModal()">Cancel</button>
+        <button class="btn-primary" onclick="saveProject()">Save</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/auth.js"></script>
+  <script src="js/projects.js"></script>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <title>TaskFlow — Dashboard</title>
+  <link rel="stylesheet" href="css/style.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600;700&display=swap" rel="stylesheet"/>
+</head>
+<body>
+  <nav class="navbar">
+    <span class="brand">TaskFlow</span>
+    <div class="nav-links">
+      <a href="dashboard.html" class="active">Dashboard</a>
+      <a href="projects.html">Projects</a>
+      <a href="tasks.html">Tasks</a>
+    </div>
+    <div class="nav-user">
+      <span id="navUserName"></span>
+      <span id="navUserRole" class="badge"></span>
+      <button onclick="logout()" class="btn-logout">Logout</button>
+    </div>
+  </nav>
+
+  <main class="container">
+    <h2 class="page-title">Dashboard</h2>
+
+    <div class="stats-grid">
+      <div class="stat-card"><div class="stat-num" id="totalTasks">0</div><div class="stat-label">Total Tasks</div></div>
+      <div class="stat-card green"><div class="stat-num" id="doneTasks">0</div><div class="stat-label">Completed</div></div>
+      <div class="stat-card yellow"><div class="stat-num" id="inProgressTasks">0</div><div class="stat-label">In Progress</div></div>
+      <div class="stat-card red"><div class="stat-num" id="overdueTasks">0</div><div class="stat-label">Overdue</div></div>
+    </div>
+
+    <div class="dashboard-grid">
+      <div class="card">
+        <h3>My Tasks</h3>
+        <div id="myTasksList" class="task-list"></div>
+      </div>
+      <div class="card">
+        <h3>Recent Projects</h3>
+        <div id="projectsList" class="task-list"></div>
+      </div>
+    </div>
+  </main>
+  <script src="js/auth.js"></script>
+  <script src="js/dashboard.js"></script>
+</body>
+</html>
