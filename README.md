@@ -10,7 +10,7 @@
 
 | Resource | URL |
 |----------|-----|
-| 🌐 Live App | https://your-app.up.railway.app |
+| 🌐 Live App |  |
 
 
 ---
